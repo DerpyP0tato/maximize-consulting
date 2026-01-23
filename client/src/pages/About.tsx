@@ -21,9 +21,7 @@ export default function About() {
               About Maximize
             </h1>
             <div className="text-lg text-zinc-400 space-y-4 leading-relaxed">
-              <p>
-                Maximize Consulting helps early-stage teams move faster by removing operational friction.
-              </p>
+              Maximize Consulting helps teams move faster by removing operational friction.
               <p>
                 We specialize in automation, analytics, and lightweight internal tools—building practical systems that save time and support better decisions. Our work focuses on solving real problems: connecting tools, setting up reliable tracking, and guiding technical decisions.
               </p>
@@ -50,7 +48,7 @@ export default function About() {
               <h3 className="text-white font-bold mb-4">About Maxwell</h3>
               <div className="text-lg text-zinc-400 space-y-4 leading-relaxed">
                 <p>
-                  I’m Maxwell Chan, a builder and consultant focused on helping early-stage teams use technology more effectively.
+                  I’m Maxwell Chan, a builder and consultant focused on helping teams use technology more effectively.
                 </p>
                 <p>
                   My background sits at the intersection of business and engineering, where I’ve worked on automation, analytics, and internal tools that eliminate manual work and make data easier to understand and act on. I’ve supported startups, student organizations, and small teams by connecting disconnected systems, setting up reliable analytics, and guiding technical decisions that actually fit their scale and resources.

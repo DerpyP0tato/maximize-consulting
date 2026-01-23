@@ -38,23 +38,29 @@ export default function Contact() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(values),
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
+          ...values,
+        }),
       });
 
       const data = await response.json();
 
-      if (!response.ok) {
+      if (data.success) {
+        toast({
+          title: "Message Sent",
+          description: "We'll be in touch shortly.",
+        });
+        form.reset();
+      } else {
         throw new Error(data.message || "Failed to send message");
       }
-
-      toast({
-        title: "Message Sent",
-        description: "We'll be in touch shortly.",
-      });
-      form.reset();
     } catch (error: any) {
       toast({
         title: "Error",
