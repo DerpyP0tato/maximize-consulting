@@ -1,0 +1,121 @@
+Prompt:
+Design a modern, premium consulting website for Maximize Consulting, a boutique firm focused on automation, analytics, and technical strategy for small teams.
+
+Brand & Tone
+Business name: Maximize Consulting
+Tagline: Automation, analytics, and technical strategy for small teams
+Tone: confident, calm, execution-focused
+Personality: credible, builder-minded, no fluff
+Feels like a consultant who ships systems, not slide decks
+
+Visual Style
+Modern, clean, tech-forward
+Dark mode default with optional light mode
+High-contrast typography
+Subtle gradients, glass/blur accents
+Premium consulting aesthetic (Stripe / Linear vibes)
+
+Motion & Animations (VERY IMPORTANT)
+Smooth scroll-triggered animations
+Fade + slide-up transitions for sections
+Staggered reveal for cards, bullets, and steps
+Buttons with micro-interactions (hover glow, slight scale, arrow slide)
+Sticky navbar with scroll-based transparency
+Animated section dividers (gradient lines or blur effects)
+Motion should feel polished and intentional, not flashy
+Respect reduced-motion preferences
+
+Pages & Content
+1. Home
+Hero
+Headline:
+“Automate the busywork. Measure what matters. Move faster.”
+Subheadline:
+“Maximize Consulting helps startups, nonprofits, and small teams streamline operations through automation, analytics, and technical strategy.”
+Primary CTA: Book a Free Call
+Secondary CTA: View Services
+Subtle animated gradient or particle background
+Problems Section
+4 animated cards:
+Manual workflows
+Broken analytics
+Disconnected tools
+No clear execution roadmap
+Services Preview
+3 service cards with icons:
+Automation & Internal Tools
+Analytics & Marketing Tech
+Technical Strategy & Advisory
+Cards lift slightly and glow on hover
+How It Works Preview
+4-step flow:
+Intro Call
+Audit & Proposal
+Build & Execute
+Review & Optimize
+Animate connectors as the user scrolls
+Final CTA
+Bold section with animated gradient background
+Text:
+“Want a clearer system by next week?”
+CTA: Book a Free Call
+
+2. Services
+Page header with animated underline or gradient accent.
+Automation & Internal Tools
+Focus on saving time and eliminating manual work
+Bullet points animate in one by one
+Analytics & Marketing Tech
+Emphasize clarity, dashboards, funnels, KPIs
+Technical Strategy & Advisory
+Position Maximize Consulting as a trusted technical partner
+Qualifier Section
+Title: Who this is not for
+Low-emphasis styling with subtle fade-in
+
+3. How It Works
+Timeline-style layout
+Each step animates on scroll:
+Intro Call
+Audit & Proposal
+Build & Execute
+Review & Optimize
+Use animated icons or progress indicators
+
+4. About
+Headline: About Maximize Consulting
+Split layout with portrait/avatar placeholder
+Emphasize:
+Builder mindset
+Execution over theory
+Clear outcomes
+Text blocks animate independently
+
+5. Contact
+Two-column layout:
+Left: Calendly embed placeholder
+Right: contact form (name, email, company/org, problem)
+Inputs animate on focus
+Submit button has loading animation
+
+Navigation & Footer
+Sticky top navigation with animated active link indicator
+CTA button always visible: Book a Free Call
+Footer with subtle animated divider line
+
+Technical Constraints
+Frontend-only marketing site
+No authentication
+No database
+Placeholder embeds allowed (Calendly, email)
+Fully responsive, mobile-first
+
+Accessibility
+Keyboard navigable
+High contrast text
+Motion respects reduced-motion settings
+
+Make the site feel credible, calm, and powerful — like a consultant who builds real systems and helps teams move faster with clarity.
+
+
+
