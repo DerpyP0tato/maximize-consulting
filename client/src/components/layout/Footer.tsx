@@ -4,34 +4,23 @@ export function Footer() {
   return (
     <footer className="bg-zinc-950 border-t border-white/10 pt-16 pb-8">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-12 mb-16">
+        <div className="grid md:grid-cols-3 gap-12 mb-16">
           <div className="col-span-2">
-            <Link href="/">
-              <a className="text-xl font-bold font-heading tracking-tight text-white mb-4 block">
-                Maximize<span className="text-white/60">Consulting</span>
-              </a>
+            <Link href="/" className="text-xl font-bold font-heading tracking-tight text-white mb-4 block">
+              Maximize<span className="text-white/60">Consulting</span>
             </Link>
             <p className="text-zinc-400 max-w-sm mb-6">
-              Automation, analytics, and technical strategy for small teams. 
+              Automation, analytics, and technical strategy for small teams.
               We help you build systems that scale.
             </p>
-          </div>
-          
-          <div>
-            <h4 className="text-white font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-zinc-400">
-              <li><Link href="/services"><a className="hover:text-white transition-colors">Automation</a></Link></li>
-              <li><Link href="/services"><a className="hover:text-white transition-colors">Analytics</a></Link></li>
-              <li><Link href="/services"><a className="hover:text-white transition-colors">Technical Strategy</a></Link></li>
-            </ul>
           </div>
 
           <div>
             <h4 className="text-white font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-zinc-400">
-              <li><Link href="/about"><a className="hover:text-white transition-colors">About</a></Link></li>
-              <li><Link href="/how-it-works"><a className="hover:text-white transition-colors">Process</a></Link></li>
-              <li><Link href="/contact"><a className="hover:text-white transition-colors">Contact</a></Link></li>
+              <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors">Services</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
         </div>
