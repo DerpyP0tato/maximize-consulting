@@ -6,6 +6,8 @@ import { ServicesPreview } from "@/components/home/ServicesPreview";
 import { ProcessPreview } from "@/components/home/ProcessPreview";
 import { FinalCTA } from "@/components/home/FinalCTA";
 
+import { Recommendations } from "@/components/home/Recommendations";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
@@ -14,6 +16,7 @@ export default function Home() {
       <Problems />
       <ServicesPreview />
       <ProcessPreview />
+      <Recommendations />
       <FinalCTA />
       <Footer />
     </div>

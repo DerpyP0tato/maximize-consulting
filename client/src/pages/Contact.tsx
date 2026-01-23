@@ -35,27 +35,45 @@ export default function Contact() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Failed to send message");
+      }
+
       toast({
         title: "Message Sent",
         description: "We'll be in touch shortly.",
       });
       form.reset();
-    }, 1500);
+    } catch (error: any) {
+      toast({
+        title: "Error",
+        description: error.message || "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
-      
+
       <main className="pt-32 pb-24 px-6 container mx-auto">
-        <motion.div 
-          initial="hidden" 
-          animate="visible" 
+        <motion.div
+          initial="hidden"
+          animate="visible"
           variants={fadeIn}
           className="max-w-4xl mx-auto mb-16 text-center"
         >
@@ -67,27 +85,12 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Calendly Placeholder */}
-          <motion.div 
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2 }}
-            className="bg-zinc-900/30 border border-white/5 rounded-2xl overflow-hidden min-h-[600px] flex items-center justify-center relative"
-          >
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-zinc-500 space-y-4">
-               <div className="w-16 h-16 rounded-full bg-zinc-800 flex items-center justify-center">
-                 📅
-               </div>
-               <p>[ Calendly Embed Placeholder ]</p>
-            </div>
-          </motion.div>
-
+        <div className="max-w-2xl mx-auto">
           {/* Contact Form */}
-          <motion.div 
-             initial={{ opacity: 0, x: 20 }}
-             animate={{ opacity: 1, x: 0 }}
-             transition={{ delay: 0.4 }}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
           >
             <Card className="bg-zinc-900/50 border-white/10 backdrop-blur-sm">
               <CardContent className="p-8">
@@ -106,7 +109,7 @@ export default function Contact() {
                         </FormItem>
                       )}
                     />
-                    
+
                     <div className="grid grid-cols-2 gap-6">
                       <FormField
                         control={form.control}
@@ -143,10 +146,10 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel className="text-white">How can we help?</FormLabel>
                           <FormControl>
-                            <Textarea 
-                              placeholder="We need help automating our sales reporting..." 
-                              {...field} 
-                              className="bg-zinc-950/50 border-white/10 focus:border-indigo-500/50 transition-colors min-h-[150px] resize-none" 
+                            <Textarea
+                              placeholder="We need help automating our sales reporting..."
+                              {...field}
+                              className="bg-zinc-950/50 border-white/10 focus:border-indigo-500/50 transition-colors min-h-[150px] resize-none"
                             />
                           </FormControl>
                           <FormMessage />
