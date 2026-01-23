@@ -3,10 +3,15 @@ import { Footer } from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/animations";
 import { Linkedin } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 export default function About() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="About Maximize Consulting | Technical Consulting & Automation"
+        description="Meet Maxwell Chan and learn about Maximize Consulting. We specialize in automation, analytics, and lightweight internal tools that help teams move faster."
+      />
       <Navbar />
 
       <main className="pt-32 pb-24 px-6 container mx-auto">

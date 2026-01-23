@@ -7,10 +7,15 @@ import { ProcessPreview } from "@/components/home/ProcessPreview";
 import { FinalCTA } from "@/components/home/FinalCTA";
 
 import { Recommendations } from "@/components/home/Recommendations";
+import { SEO } from "@/components/SEO";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <SEO
+        title="Maximize Consulting | Automation & Technical Strategy for Teams"
+        description="Maximize Consulting helps teams move faster with automation, analytics, and technical strategy. We build practical systems that save time and support better decisions."
+      />
       <Navbar />
       <Hero />
       <Problems />

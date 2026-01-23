@@ -4,10 +4,15 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/lib/animations";
 import { Check, Bot, BarChart3, Compass, Code } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { SEO } from "@/components/SEO";
 
 export default function Services() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="Services | Automation, Analytics & Web Development"
+        description="Maximize Consulting offers automation, analytics, technical strategy, and web development services. We build practical systems that save time and support better decisions."
+      />
       <Navbar />
 
       <main className="pt-32 pb-24 px-6 container mx-auto">

@@ -13,6 +13,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { useToast } from "@/hooks/use-toast";
 import { Loader2 } from "lucide-react";
 import { useState } from "react";
+import { SEO } from "@/components/SEO";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -74,6 +75,10 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="Contact Maximize Consulting | Get in Touch"
+        description="Contact Maximize Consulting to discuss automation, analytics, or technical strategy for your team. Fill out our form or book a time directly."
+      />
       <Navbar />
 
       <main className="pt-32 pb-24 px-6 container mx-auto">
