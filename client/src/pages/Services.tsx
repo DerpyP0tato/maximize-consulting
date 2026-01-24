@@ -150,7 +150,7 @@ export default function Services() {
               </CardHeader>
               <CardContent className="p-8 pt-4">
                 <p className="text-zinc-400 mb-8 text-lg max-w-2xl">
-                  We build high-quality web applications and MVPs. From landing pages to complex SaaS platforms, we ship clean, maintainable code.
+                  We build high-quality web applications and MVPs. From landing pages to custom internal tools, we ship clean, maintainable code.
                 </p>
                 <ul className="grid sm:grid-cols-2 gap-4">
                   {[
