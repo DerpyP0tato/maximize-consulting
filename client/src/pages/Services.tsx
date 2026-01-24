@@ -88,7 +88,7 @@ export default function Services() {
                   {[
                     "Google Analytics 4 setup and event tracking",
                     "Conversion tracking and funnel analysis",
-                    "Custom KPI dashboards (Looker Studio or spreadsheets)",
+                    "Custom KPI dashboards",
                     "Analytics cleanup and documentation for reliable reporting"
                   ].map((item, i) => (
                     <motion.li key={i} variants={fadeIn} className="flex items-center gap-3 text-zinc-300">
