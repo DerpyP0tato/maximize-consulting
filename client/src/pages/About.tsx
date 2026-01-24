@@ -26,7 +26,9 @@ export default function About() {
               About Maximize
             </h1>
             <div className="text-lg text-zinc-400 space-y-4 leading-relaxed">
-              Maximize Consulting helps teams move faster by removing operational friction.
+              <p>
+                Maximize Consulting helps teams move faster by removing operational friction.
+              </p>
               <p>
                 We specialize in automation, analytics, and lightweight internal tools—building practical systems that save time and support better decisions. Our work focuses on solving real problems: connecting tools, setting up reliable tracking, and guiding technical decisions.
               </p>
@@ -37,14 +39,22 @@ export default function About() {
 
             <div className="pt-8 border-t border-white/10">
               <h3 className="text-white font-bold mb-4">Core Values</h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-6">
                 <div>
-                  <h4 className="text-indigo-400 font-medium mb-1">Execution First</h4>
-                  <p className="text-sm text-zinc-500">Theory is cheap. We value working systems.</p>
+                  <h4 className="text-indigo-400 font-semibold mb-2 text-base tracking-normal">Your Scale, Your Budget</h4>
+                  <p className="text-sm text-zinc-500">Practical solutions designed for your actual resources, not enterprise fantasies.</p>
                 </div>
                 <div>
-                  <h4 className="text-indigo-400 font-medium mb-1">No Fluff</h4>
+                  <h4 className="text-indigo-400 font-semibold mb-2 text-base tracking-normal">No Fluff</h4>
                   <p className="text-sm text-zinc-500">Clear communication. Honest timelines.</p>
+                </div>
+                <div>
+                  <h4 className="text-indigo-400 font-semibold mb-2 text-base tracking-normal">Built to Last</h4>
+                  <p className="text-sm text-zinc-500">Simple systems that teams can actually maintain.</p>
+                </div>
+                <div>
+                  <h4 className="text-indigo-400 font-semibold mb-2 text-base tracking-normal">Build What You Need</h4>
+                  <p className="text-sm text-zinc-500">Custom solutions for real problems, not off-the-shelf overkill.</p>
                 </div>
               </div>
             </div>
