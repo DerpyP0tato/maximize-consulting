@@ -36,7 +36,7 @@ export function Recommendations() {
 
                         <div className="bg-zinc-900/30 border border-white/5 rounded-2xl p-8 relative">
                             <p className="text-zinc-300 italic mb-6 leading-relaxed">
-                                "Starting a small business was definitely difficult, but working with Maxwell made it a lot easier. He was able to clearly scope out what I needed needed, kept everything at a low cost, and supported me throughout the implementation process. Even though my operations are very hands on, he found practical ways to add automation, like around revenue controls, which reduced manual work and improved my day to day operations."
+                                "Starting a small business was definitely difficult, but working with Maxwell made it much easier. He clearly scoped out what I needed, kept costs low, and supported me throughout the implementation. Even though my operations are very hands on, he found practical ways to add automation, such as revenue controls, which reduced manual work and improved my day to day operations."
                             </p>
                             <div className="flex items-center gap-4">
                                 <div className="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 font-bold text-sm">
