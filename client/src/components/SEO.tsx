@@ -71,6 +71,47 @@ export function SEO({
                     "name": "Maxwell Chan",
                     "jobTitle": "Founder & Lead Engineer"
                 }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "ItemList",
+                "itemListElement": [
+                    {
+                        "@type": "SiteNavigationElement",
+                        "position": 1,
+                        "name": "Home",
+                        "description": "Maximize Consulting Homepage",
+                        "url": "https://www.maximizeconsulting.org/"
+                    },
+                    {
+                        "@type": "SiteNavigationElement",
+                        "position": 2,
+                        "name": "Services",
+                        "description": "Our Consulting Services",
+                        "url": "https://www.maximizeconsulting.org/services"
+                    },
+                    {
+                        "@type": "SiteNavigationElement",
+                        "position": 3,
+                        "name": "How It Works",
+                        "description": "Our Process",
+                        "url": "https://www.maximizeconsulting.org/how-it-works"
+                    },
+                    {
+                        "@type": "SiteNavigationElement",
+                        "position": 4,
+                        "name": "About",
+                        "description": "About Maximize Consulting",
+                        "url": "https://www.maximizeconsulting.org/about"
+                    },
+                    {
+                        "@type": "SiteNavigationElement",
+                        "position": 5,
+                        "name": "Contact",
+                        "description": "Get in Touch",
+                        "url": "https://www.maximizeconsulting.org/contact"
+                    }
+                ]
             }
         ];
 
