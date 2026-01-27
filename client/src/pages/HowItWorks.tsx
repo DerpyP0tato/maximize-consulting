@@ -43,7 +43,7 @@ export default function HowItWorks() {
       <SEO
         title="How It Works - Maximize Consulting"
         description="Our transparent process: from intro call to audit, build, and optimization. We focus on shipping value efficiently."
-        url="https://maximizeconsulting.co/how-it-works"
+        url="https://www.maximizeconsulting.org/how-it-works"
       />
       <Navbar />
 

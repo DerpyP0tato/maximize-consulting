@@ -13,7 +13,7 @@ export function SEO({
     title,
     description,
     image = "/og-image.png", // Assuming a default OG image exists or will be added
-    url = "https://maximizeconsulting.co", // Replace with actual domain
+    url = "https://www.maximizeconsulting.org", // Replace with actual domain
     type = "website",
     noindex = false
 }: SEOProps) {
@@ -56,8 +56,8 @@ export function SEO({
                 "@type": "ConsultingService",
                 "name": "Maximize Consulting",
                 "description": description,
-                "url": "https://maximizeconsulting.co",
-                "logo": "https://maximizeconsulting.co/logo.png",
+                "url": "https://www.maximizeconsulting.org",
+                "logo": "https://www.maximizeconsulting.org/logo.png",
                 "sameAs": [
                     "https://www.linkedin.com/in/maxwellchan1/"
                 ],
@@ -75,15 +75,15 @@ export function SEO({
         ];
 
         // Add WebSite schema for homepage to help with Sitelinks
-        if (url === "https://maximizeconsulting.co" || url === "https://maximizeconsulting.co/") {
+        if (url === "https://www.maximizeconsulting.org" || url === "https://www.maximizeconsulting.org/") {
             schemas.push({
                 "@context": "https://schema.org",
                 "@type": "WebSite",
                 "name": "Maximize Consulting",
-                "url": "https://maximizeconsulting.co",
+                "url": "https://www.maximizeconsulting.org",
                 "potentialAction": {
                     "@type": "SearchAction",
-                    "target": "https://maximizeconsulting.co/?q={search_term_string}",
+                    "target": "https://www.maximizeconsulting.org/?q={search_term_string}",
                     "query-input": "required name=search_term_string"
                 }
             });
