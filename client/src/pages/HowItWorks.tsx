@@ -35,15 +35,22 @@ const steps = [
   }
 ];
 
+import { SEO } from "@/components/SEO";
+
 export default function HowItWorks() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="How It Works - Maximize Consulting"
+        description="Our transparent process: from intro call to audit, build, and optimization. We focus on shipping value efficiently."
+        url="https://maximizeconsulting.co/how-it-works"
+      />
       <Navbar />
-      
+
       <main className="pt-32 pb-24 px-6 container mx-auto">
-        <motion.div 
-          initial="hidden" 
-          animate="visible" 
+        <motion.div
+          initial="hidden"
+          animate="visible"
           variants={fadeIn}
           className="text-center max-w-3xl mx-auto mb-20"
         >
@@ -59,7 +66,7 @@ export default function HowItWorks() {
           {/* Vertical Line */}
           <div className="absolute left-[27px] md:left-1/2 top-0 bottom-0 w-px bg-white/10" />
 
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
@@ -67,8 +74,8 @@ export default function HowItWorks() {
             className="space-y-12"
           >
             {steps.map((step, index) => (
-              <motion.div 
-                key={index} 
+              <motion.div
+                key={index}
                 variants={fadeIn}
                 className={`relative flex flex-col md:flex-row gap-8 items-start ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
               >
@@ -79,24 +86,24 @@ export default function HowItWorks() {
 
                 {/* Content */}
                 <div className="ml-12 md:ml-0 md:w-1/2 pt-1 md:px-12">
-                   <div className={`flex items-center gap-4 mb-4 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+                  <div className={`flex items-center gap-4 mb-4 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
                     <div className="w-12 h-12 rounded-xl bg-zinc-900 border border-white/5 flex items-center justify-center text-indigo-400 shrink-0">
                       <step.icon size={24} />
                     </div>
                     <h3 className="text-3xl font-bold text-white">{step.title}</h3>
-                   </div>
-                   
-                   <p className="text-zinc-400 leading-relaxed mb-6">
-                     {step.desc}
-                   </p>
+                  </div>
 
-                   <ul className="space-y-2">
-                     {step.details.map((detail, i) => (
-                       <li key={i} className="text-sm text-zinc-500 flex items-center gap-2">
-                         <div className="w-1 h-1 bg-zinc-500 rounded-full" /> {detail}
-                       </li>
-                     ))}
-                   </ul>
+                  <p className="text-zinc-400 leading-relaxed mb-6">
+                    {step.desc}
+                  </p>
+
+                  <ul className="space-y-2">
+                    {step.details.map((detail, i) => (
+                      <li key={i} className="text-sm text-zinc-500 flex items-center gap-2">
+                        <div className="w-1 h-1 bg-zinc-500 rounded-full" /> {detail}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
                 {/* Empty side for layout balance */}

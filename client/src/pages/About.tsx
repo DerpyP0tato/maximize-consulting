@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/animations";
 import { Linkedin } from "lucide-react";
 import { SEO } from "@/components/SEO";
+import { SelectedWork } from "@/components/about/SelectedWork";
 
 export default function About() {
   return (
@@ -38,7 +39,7 @@ export default function About() {
             </div>
 
             <div className="pt-8 border-t border-white/10">
-              <h3 className="text-white font-bold mb-4">Core Values</h3>
+              <h2 className="text-xl md:text-2xl text-white font-bold mb-4 font-heading">Core Values</h2>
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <h4 className="text-indigo-400 font-semibold mb-2 text-base tracking-normal">Your Scale, Your Budget</h4>
@@ -60,7 +61,7 @@ export default function About() {
             </div>
 
             <div className="pt-8 border-t border-white/10">
-              <h3 className="text-white font-bold mb-4">About Maxwell</h3>
+              <h2 className="text-xl md:text-2xl text-white font-bold mb-4 font-heading">About Maxwell</h2>
               <div className="text-lg text-zinc-400 space-y-4 leading-relaxed">
                 <p>
                   I’m Maxwell Chan, a builder and consultant focused on helping teams use technology more effectively.
@@ -105,7 +106,10 @@ export default function About() {
 
               <img
                 src="/profile.jpg"
-                alt="Maxwell Chan"
+                alt="Maxwell Chan - Founder of Maximize Consulting"
+                width="382"
+                height="510"
+                loading="lazy"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
               />
             </div>
@@ -113,6 +117,7 @@ export default function About() {
         </div>
       </main>
 
+      <SelectedWork />
       <Footer />
     </div>
   );

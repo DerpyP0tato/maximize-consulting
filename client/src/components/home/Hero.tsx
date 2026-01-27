@@ -10,10 +10,13 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroBg} 
-          alt="Abstract Background" 
+        <img
+          src={heroBg}
+          alt="Abstract geometric background representing structure and flow"
           className="w-full h-full object-cover opacity-60 mix-blend-screen"
+          width="1920"
+          height="1080"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/80 to-background" />
       </div>
@@ -28,7 +31,7 @@ export function Hero() {
           <motion.div variants={fadeIn} className="inline-block px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-sm font-medium text-zinc-300 mb-4">
             Maximize Consulting
           </motion.div>
-          
+
           <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-bold font-heading tracking-tight leading-tight text-white drop-shadow-lg">
             Automate the busywork.<br />
             Measure what matters.<br />
@@ -38,7 +41,7 @@ export function Hero() {
           </motion.h1>
 
           <motion.p variants={fadeIn} className="text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-            We help startups, nonprofits, and small teams streamline operations through automation, analytics, and technical strategy.
+            We help ambitious organizations streamline operations through automation, analytics, and technical strategy.
           </motion.p>
 
           <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
