@@ -8,6 +8,7 @@ import Home from "@/pages/Home";
 import Services from "@/pages/Services";
 import HowItWorks from "@/pages/HowItWorks";
 import About from "@/pages/About";
+import Projects from "@/pages/Projects";
 import Contact from "@/pages/Contact";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
 
@@ -20,6 +21,7 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/services" component={Services} />
         <Route path="/how-it-works" component={HowItWorks} />
+        <Route path="/projects" component={Projects} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/animations";
 import { Linkedin } from "lucide-react";
 import { SEO } from "@/components/SEO";
-import { SelectedWork } from "@/components/about/SelectedWork";
+
 
 export default function About() {
   return (
@@ -117,7 +117,7 @@ export default function About() {
         </div>
       </main>
 
-      <SelectedWork />
+
       <Footer />
     </div>
   );

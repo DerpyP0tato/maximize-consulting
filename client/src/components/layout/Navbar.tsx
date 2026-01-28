@@ -21,6 +21,7 @@ export function Navbar() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/services", label: "Services" },
+    { href: "/projects", label: "Projects" },
     { href: "/how-it-works", label: "How It Works" },
     { href: "/about", label: "About" },
   ];
@@ -91,7 +92,7 @@ export function Navbar() {
           >
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href}>
-                <a 
+                <a
                   className={cn(
                     "text-lg font-medium",
                     location === link.href ? "text-white" : "text-zinc-400"
