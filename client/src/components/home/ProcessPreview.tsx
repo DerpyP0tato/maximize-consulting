@@ -33,7 +33,7 @@ export function ProcessPreview() {
           <p className="text-zinc-400">From chaos to clarity in four steps.</p>
         </div>
 
-        <motion.div 
+        <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -47,8 +47,8 @@ export function ProcessPreview() {
             <motion.div key={index} variants={fadeIn} className="relative pt-8 md:text-center">
               {/* Dot */}
               <div className="hidden md:block absolute top-10 left-1/2 -translate-x-1/2 w-4 h-4 bg-zinc-950 border-2 border-white rounded-full z-10" />
-              
-              <div className="text-4xl font-bold text-white/10 mb-4">{step.number}</div>
+
+              <div className="text-4xl font-bold text-white/20 mb-4">{step.number}</div>
               <h3 className="text-xl font-bold text-white mb-2">{step.title}</h3>
               <p className="text-zinc-400 text-sm">{step.desc}</p>
             </motion.div>

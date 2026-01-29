@@ -11,6 +11,7 @@ import {
     Layout,
     LucideIcon
 } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface Project {
     id: number;
@@ -102,6 +103,7 @@ const projects: Project[] = [
 ];
 
 export function SelectedWork() {
+    const isMobile = useIsMobile();
     const targetRef = useRef<HTMLDivElement | null>(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
@@ -110,17 +112,17 @@ export function SelectedWork() {
     const x = useTransform(scrollYProgress, [0, 1], ["1%", "-75%"]);
 
     return (
-        <section ref={targetRef} className="relative h-[300vh] bg-zinc-950">
+        <section ref={targetRef} className={`relative bg-zinc-950 ${isMobile ? "min-h-screen pt-32 pb-12" : "h-[300vh]"}`}>
             {/* Background Texture/Gradient */}
             <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-zinc-900/50 to-transparent pointer-events-none" />
             <div className="absolute right-0 top-1/4 w-[500px] h-[500px] bg-indigo-500/10 blur-[120px] rounded-full pointer-events-none" />
 
-            <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-                <motion.div style={{ x }} className="flex gap-8 px-12 md:px-24">
-                    <div className="flex flex-col justify-center min-w-[300px] md:min-w-[400px] pr-12 z-10">
+            <div className={isMobile ? "relative px-6" : "sticky top-0 flex h-screen items-center overflow-hidden"}>
+                <motion.div style={{ x: isMobile ? 0 : x }} className={`flex gap-8 ${isMobile ? "flex-col" : "px-12 md:px-24"}`}>
+                    <div className={`flex flex-col z-10 ${isMobile ? "w-full mb-12 items-center text-center" : "justify-center min-w-[300px] md:min-w-[400px] pr-12"}`}>
                         <h2 className="text-4xl md:text-7xl font-bold font-heading text-white mb-6 leading-tight">
-                            Selected <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-500 to-zinc-700">Work</span>
+                            Selected <br className="hidden md:block" />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-200 to-zinc-500">Work</span>
                         </h2>
                         <p className="text-zinc-400 text-lg md:text-xl max-w-sm leading-relaxed">
                             A showcase of technical strategy, automation, and tooling that drove real business results.
@@ -130,13 +132,16 @@ export function SelectedWork() {
                     {projects.map((project) => (
                         <div
                             key={project.id}
-                            className="group relative h-[450px] w-[320px] md:h-[550px] md:w-[480px] overflow-hidden rounded-3xl flex-shrink-0 transition-all duration-500"
+                            className={`group relative overflow-hidden rounded-3xl flex-shrink-0 transition-all duration-500 ${isMobile
+                                ? "w-full h-auto"
+                                : "h-[450px] w-[320px] md:h-[550px] md:w-[480px]"
+                                }`}
                         >
                             {/* Glassmorphic Card */}
                             <div className="absolute inset-0 bg-zinc-900/40 backdrop-blur-xl border border-white/10 rounded-3xl transition-colors duration-300 group-hover:bg-zinc-900/60 group-hover:border-white/20" />
 
                             {/* Inner Content */}
-                            <div className="relative h-full p-8 md:p-10 flex flex-col justify-between z-10">
+                            <div className={`relative h-full p-8 md:p-10 flex flex-col z-10 ${isMobile ? "gap-8" : "justify-between"}`}>
                                 <div>
                                     <div className="flex justify-between items-start mb-8">
                                         <div className="p-3 bg-white/5 rounded-xl border border-white/5 shadow-inner">
@@ -147,11 +152,11 @@ export function SelectedWork() {
                                         </span>
                                     </div>
 
-                                    <h3 className="text-2xl md:text-4xl font-bold text-white mb-4 group-hover:text-indigo-200 transition-colors">
+                                    <h3 className="text-2xl md:text-4xl font-bold text-white mb-4 group-hover:text-indigo-200 transition-colors break-words hyphens-auto">
                                         {project.title}
                                     </h3>
 
-                                    <p className="text-zinc-400 leading-relaxed text-sm md:text-base line-clamp-4">
+                                    <p className="text-zinc-400 leading-relaxed text-sm md:text-base">
                                         {project.description}
                                     </p>
                                 </div>
