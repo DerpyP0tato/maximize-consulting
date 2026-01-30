@@ -125,7 +125,7 @@ export function SelectedWork() {
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-200 to-zinc-500">Work</span>
                         </h2>
                         <p className="text-zinc-400 text-lg md:text-xl max-w-sm leading-relaxed">
-                            A showcase of technical strategy, automation, and tooling that drove real business results.
+                            A showcase of technical strategy, automation, and tooling that drove real business results across different professional contexts.
                         </p>
                     </div>
 
