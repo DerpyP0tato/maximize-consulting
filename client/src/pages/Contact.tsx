@@ -77,7 +77,7 @@ export default function Contact() {
     <div className="min-h-screen bg-background text-foreground">
       <SEO
         title="Contact Maximize Consulting | Get in Touch"
-        description="Contact Maximize Consulting to discuss automation, analytics, or technical strategy for your team. Fill out our form or book a time directly."
+        description="Contact Maximize Consulting to discuss automation, analytics, or technical strategy for your team. Fill out our form below."
       />
       <Navbar />
 
@@ -92,7 +92,7 @@ export default function Contact() {
             Let's build something.
           </h1>
           <p className="text-xl text-zinc-400">
-            Fill out the form below or book a time directly on our calendar.
+            Fill out the form below.
           </p>
         </motion.div>
 
