@@ -67,7 +67,7 @@ export default function About() {
                   I’m Maxwell Chan, a builder and consultant focused on helping teams use technology more effectively.
                 </p>
                 <p>
-                  My background sits at the intersection of business and engineering, where I’ve worked on automation, analytics, and internal tools that eliminate manual work and make data easier to understand and act on. I’ve supported startups, student organizations, and small teams by connecting disconnected systems, setting up reliable analytics, and guiding technical decisions that actually fit their scale and resources.
+                  My background sits at the intersection of business and engineering, where I’ve worked on automation, analytics, and internal tools that eliminate manual work and make data easier to understand and act on. I’ve supported teams across startups, large coporations, and nonprofits by connecting disconnected systems, setting up reliable analytics, and guiding technical decisions that actually fit their scale and resources.
                 </p>
                 <p>
                   I care less about flashy tech and more about practical solutions—systems that are simple, maintainable, and designed around how people already work. Whether I’m building an automation, cleaning up analytics, or advising on a technical roadmap, my goal is always the same: help teams move faster without unnecessary complexity.
