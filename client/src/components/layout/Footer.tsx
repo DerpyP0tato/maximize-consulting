@@ -26,12 +26,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-zinc-500">
+        <div className="border-t border-white/5 pt-8 text-center md:text-left text-sm text-zinc-500">
           <p>&copy; {new Date().getFullYear()} Maximize Consulting. All rights reserved.</p>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Privacy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms</a>
-          </div>
         </div>
       </div>
     </footer>
