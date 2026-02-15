@@ -52,7 +52,7 @@ const projects: Project[] = [
         description: "Created an automated, Selenium-based data pipeline that connected Amazon marketplace data directly into the company’s analytics platform, eliminating manual extraction and reporting workflows.",
         icon: GitBranch,
         stats: [
-            { label: "Time Saved", value: "15+ hrs/wk" },
+            { label: "Time Saved", value: "20+ hrs/wk" },
             { label: "Integration", value: "End-to-End" },
         ],
     },
